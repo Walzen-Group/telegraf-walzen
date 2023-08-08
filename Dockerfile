@@ -5,6 +5,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitoo
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-RUN pip install tinytuya
+RUN pip install tinytuya fusion_solar_py
 RUN echo "telegraf ALL=(ALL) NOPASSWD:/usr/bin/ipmitool, /usr/sbin/smartctl" >> /etc/sudoers
 # RUN apk update && apk upgrade && apk add python3 && apk add ipmitool && apk add smartmontools
