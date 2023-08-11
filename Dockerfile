@@ -1,7 +1,7 @@
 FROM telegraf:latest
 # FROM telegraf:alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo pipx
+RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
