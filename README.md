@@ -12,5 +12,5 @@ Programs:
 Python packages:
 - pandas
 - tinytuya
-- [fusionsolarpy](https://github.com/Walzen-Group/FusionSolarPy)
+- [fusionsolarpy](https://github.com/Walzen-Group/FusionSolarPy) (forked from jgriss)
 
