@@ -2,8 +2,7 @@ FROM telegraf:latest
 # FROM telegraf:alpine
 
 RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo python3-venv git wget unzip
-ARG CHROMEDRIVER_VERSION=119.0.6045.105
-RUN wget -q "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" \
+RUN wget -q "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/linux64/chrome-linux64.zip" \
     && unzip chromedriver_linux64.zip -d /opt/chromedriver \
     && rm chromedriver_linux64.zip \
     && chmod +x /opt/chromedriver/chromedriver \
