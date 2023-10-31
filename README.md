@@ -13,5 +13,7 @@ Python packages:
 - pandas
 - tinytuya
 - requests
+- beautifulsoup4
+- selenium
 - [fusionsolarpy](https://github.com/Walzen-Group/FusionSolarPy) (forked from jgriss)
 
