@@ -1,7 +1,13 @@
 FROM telegraf:latest
 # FROM telegraf:alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo python3-venv git
+RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo python3-venv git wget unzip
+ARG CHROMEDRIVER_VERSION=119.0.6045.105
+RUN wget -q "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" \
+    && unzip chromedriver_linux64.zip -d /opt/chromedriver \
+    && rm chromedriver_linux64.zip \
+    && chmod +x /opt/chromedriver/chromedriver \
+    && ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
