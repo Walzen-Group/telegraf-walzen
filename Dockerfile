@@ -1,7 +1,7 @@
 FROM telegraf:latest
 # FROM telegraf:alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo python3-venv git libgl1-mesa-dev libglib2.0-0
+RUN apt-get update && apt-get install -y --no-install-recommends python3 ipmitool smartmontools sudo python3-venv git libgl1-mesa-dev libglib2.0-0 nano
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
