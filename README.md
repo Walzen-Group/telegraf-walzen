@@ -8,6 +8,7 @@ Programs:
 - python3
 - ipmitools
 - smartmontools
+- nano
 
 Python packages:
 - pandas
