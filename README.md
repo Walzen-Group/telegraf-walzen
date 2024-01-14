@@ -6,7 +6,8 @@ Added software & tools:
 
 Programs:
 - python3
-- ipmitools
+- ~~ipmitools~~ deprecated as we switched hardware
+- lm-sensors
 - smartmontools
 - nano
 
