@@ -10,9 +10,10 @@ Programs:
 - lm-sensors
 - smartmontools
 - nano
+- nvme/cli
 
 Python packages:
-- pandas
+- polars
 - tinytuya
 - requests
 - beautifulsoup4
