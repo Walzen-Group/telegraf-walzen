@@ -13,6 +13,7 @@ Programs:
 - nvme/cli
 
 Python packages:
+- ~~pandas~~ migrated to polars
 - polars
 - tinytuya
 - requests
