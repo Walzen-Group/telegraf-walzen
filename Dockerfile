@@ -9,5 +9,6 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 RUN pip install tinytuya polars requests beautifulsoup4 selenium
 RUN pip install fusion_solar_py[captcha]@git+https://github.com/Walzen-Group/FusionSolarPy.git
 RUN mkdir -p /etc/telegraf/.cache/selenium && chown -R telegraf:281 /etc/telegraf/.cache/selenium
-RUN echo "telegraf ALL=(ALL) NOPASSWD:/usr/bin/ipmitool, /usr/sbin/smartctl" >> /etc/sudoers
+RUN echo "telegraf ALL=(ALL) NOPASSWD:/usr/sbin/smartctl" >> /etc/sudoers
+# RUN echo "telegraf ALL=(ALL) NOPASSWD:/usr/bin/ipmitool, /usr/sbin/smartctl" >> /etc/sudoers
 # RUN apk update && apk upgrade && apk add python3 && apk add ipmitool && apk add smartmontools
