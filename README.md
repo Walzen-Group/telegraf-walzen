@@ -1,6 +1,7 @@
 # Telegraf for Walzen Group
 
 This is the telegraf container with software added to function for the Walzen Group.
+Will need to be periodically updated with the upstreeam image.
 
 Added software & tools:
 
