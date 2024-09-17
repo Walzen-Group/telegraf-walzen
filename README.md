@@ -12,6 +12,7 @@ Programs:
 - smartmontools
 - nano
 - nvme/cli
+- intel-gpu-tools for intel_gpu_top
 
 Python packages:
 - ~~pandas~~ migrated to polars
