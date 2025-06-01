@@ -21,5 +21,5 @@ Python packages:
 - requests
 - beautifulsoup4
 - selenium
-- [fusionsolarpy](https://github.com/Walzen-Group/FusionSolarPy) (forked from jgriss)
+- [fusionsolarpy](https://github.com/Walzen-Group/FusionSolarPy) (forked from jgriss), currently not working
 
