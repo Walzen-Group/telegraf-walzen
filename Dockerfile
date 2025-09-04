@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends python3 lm-sens
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-RUN pip install tinytuya polars requests beautifulsoup4 selenium
-RUN pip install fusion_solar_py[captcha]@git+https://github.com/Walzen-Group/FusionSolarPy.git
+RUN pip install tinytuya polars requests beautifulsoup4 selenium tzdata
+RUN pip install fusion_solar_py[captcha]
 RUN mkdir -p /etc/telegraf/.cache/selenium && chown -R telegraf:281 /etc/telegraf/.cache/selenium
 RUN echo "telegraf ALL=(ALL) NOPASSWD:/usr/sbin/smartctl, /usr/bin/intel_gpu_top" >> /etc/sudoers
 RUN setcap "cap_perfmon,cap_sys_ptrace,cap_syslog=ep" /usr/bin/intel_gpu_top
